@@ -21,7 +21,7 @@ def main() -> None:
 
         choice = get_int_in_range("Choose from 1-5: ", 1, 5)
 
-        if choice == "1":
+        if choice == 1:
             amount = get_positive_float("Amount: ")
             category = get_text("Category (food, transport, ...): ")
             note = input("Note (Optional): ")
@@ -29,13 +29,13 @@ def main() -> None:
             saving_expeneses(expenses)
             print(f"Added {e['amount']:.2f} to {e['category']}.")
 
-        elif choice == "2":
+        elif choice == 2:
             show_expenses(expenses)
 
-        elif choice == "3":
+        elif choice == 3:
             show_totals(expenses)
 
-        elif choice == "4":
+        elif choice == 4:
             if not expenses:
                 print("There are no expenses yet.")
                 continue
@@ -45,7 +45,7 @@ def main() -> None:
             saving_expeneses(expenses)
             print(f"Deleted {removed['amount']:.2f} ({removed['category']}).")
 
-        elif choice == "5":
+        elif choice == 5:
             print("Byeee!!!")
             break
 
