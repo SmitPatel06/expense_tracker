@@ -1,4 +1,4 @@
-# Expense Tracker
+## Expense Tracker
 
 A command-line app to track daily expenses, built in Python.
 
